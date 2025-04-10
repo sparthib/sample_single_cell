@@ -34,8 +34,9 @@ input_fastq=$fastq_dir/03_blaze_processed/${sample}_matched_reads.fastq.gz
 LOGS_FOLDER=/users/sparthib/retina_lrs/code/01_fastq_processing/logs/bam_stats_genome_gencode_splice
 REFERENCE_FASTA=/dcs04/hicks/data/sparthib/references/genome/GENCODE/GRCh38.p14.genome.fa.gz
 
-SAM_FOLDER=04_minimap2_output_dir/genome/sams
-BAM_FOLDER=04_minimap2_output_dir/genome/bams
+alignment_dir= ## path to alignment outputs
+SAM_FOLDER=$alignment_dir/genome/sams
+BAM_FOLDER=$alignment_dir/genome/bams
 
 mkdir -p $SAM_FOLDER
 mkdir -p $BAM_FOLDER
